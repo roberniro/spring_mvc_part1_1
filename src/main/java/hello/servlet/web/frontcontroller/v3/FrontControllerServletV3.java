@@ -17,10 +17,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 @WebServlet(name = "frontControllerV3", urlPatterns = "/front-controller/v3/*")
-public class FrontControllerV3 extends HttpServlet {
+public class FrontControllerServletV3 extends HttpServlet {
     Map<String, ControllerV3> controllerV3Map = new HashMap<>();
 
-    public FrontControllerV3() {
+    public FrontControllerServletV3() {
         controllerV3Map.put("/front-controller/v3/members/new-form", new MemberFormControllerV3());
         controllerV3Map.put("/front-controller/v3/members/save", new MemberSaveControllerV3());
         controllerV3Map.put("/front-controller/v3/members", new MemberListControllerV3());
