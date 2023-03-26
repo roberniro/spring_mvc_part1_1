@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/springmvc/v2/members")
 public class SpringMemberControllerV2 {
 
-    MemberRepository memberRepository = MemberRepository.getInstance();
+    private MemberRepository memberRepository = MemberRepository.getInstance();
 
     @RequestMapping("/new-form")
     public ModelAndView newForm() {
